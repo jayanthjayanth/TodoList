@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animated-gradient {
+  background: linear-gradient(-45deg, 
+    #FF0000, /* Red */
+    #FF8000, /* Orange */
+    #FFFF00, /* Yellow */
+    #00FF00, /* Green */
+    #00FFFF, /* Cyan */
+    #0000FF, /* Blue */
+    #8000FF  /* Purple */
+  );
+  background-size: 700% 700%;
+  animation: gradient 30s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
